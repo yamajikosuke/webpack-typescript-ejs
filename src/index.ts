@@ -16,15 +16,14 @@ app.use(express.static('public'));
 
 // app.use("/", router);
 if (process.env.NODE_ENV !== 'production') {
-  var browserSync = require('browser-sync');
-  var bs = browserSync.create().init({
+  let browserSync = require('browser-sync').create();
+  browserSync.init({
     watch: true,
     open: false,
     logSnippet: false,
     proxy: `localhost:${defaultPort}`,
     files: ['./views/**/*']
   });
-  app.use(require('connect-browser-sync')(bs));
 }
 app.set('port', defaultPort);
 app.get('/', (req, res, next) => {
