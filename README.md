@@ -22,5 +22,9 @@ chromeのデベロッパーツールによるデバッグ方法
 デバッガ―の使い方の参考  
   https://dev.to/oieduardorabelo/nodejs-with-typescript-debug-inside-vscode-and-nodemon-23o7  
   
+# テスト
+Jestを使用予定（未統合）  
+https://github.com/yamajikosuke/jest-test  
+  
 # 参考サイト
 https://qiita.com/isihigameKoudai/items/4b790b5b2256dec27d1f
