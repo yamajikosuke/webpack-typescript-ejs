@@ -7,7 +7,7 @@ Webpack + TypeScript + Express の開発環境です。(テンプレートエン
 デプロイ  
 　npm start  
   
-#デバッグ
+# デバッグ
 chromeのデベロッパーツールによるデバッグ方法  
 １．nodemon.jsを編集  
 　"exec": "ts-node ./src/index.ts",  
@@ -20,5 +20,5 @@ chromeのデベロッパーツールによるデバッグ方法
 デバッガ―の使い方の参考 
   https://dev.to/oieduardorabelo/nodejs-with-typescript-debug-inside-vscode-and-nodemon-23o7  
   
-#参考サイト
+# 参考サイト
 https://qiita.com/isihigameKoudai/items/4b790b5b2256dec27d1f
