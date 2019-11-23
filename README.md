@@ -4,6 +4,8 @@ Webpack + TypeScript + Express の開発環境です。(テンプレートエン
 # 使い方
 開発サーバー起動  
 　npm run dev  
+開発サーバーのURL  
+　http://localhost:3001  
 デプロイ  
 　npm start  
   
