@@ -22,7 +22,7 @@ if (process.env.NODE_ENV !== 'production') {
     open: false,
     logSnippet: false,
     proxy: `localhost:${defaultPort}`,
-    files: ['./views/**/*', './public/css/*']
+    files: ['./views/**/*', './public/**/*']
   });
 }
 app.set('port', defaultPort);
