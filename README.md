@@ -2,13 +2,46 @@
 Webpack + TypeScript + Express の開発環境です。(テンプレートエンジンはEJS)  
 ファイル変更時にブラウザを自動リロードします（Browsersync）。
 # 使い方
+パッケージのインストール  
+　npm install  
 開発サーバー起動  
 　npm run dev  
 開発サーバーのURL  
 　http://localhost:3001  
 デプロイ  
 　npm start  
-  
+# フォルダ構成
+/  
+│  .eslintrc(Lintの設定ファイル)  
+│  .gitignore(Git設定ファイル)  
+│  nodemon.json(nodemonの設定ファイル：ファイル変更の監視・再実行)  
+│  package.json  
+│  README.md  
+│  readme.txt  
+│  tsconfig.json（typescript設定）  
+│  
+├─.vscode  
+│      launch.json  
+│  
+├─dist  
+│      server.js（npm startでデプロイされるファイル）  
+│  
+├─public（ドキュメントルート：CSSや画像を格納）  
+│  └─images  
+│          icon-csvfile.png  
+│  
+├─src  
+│      index.ts（エントリポイント）  
+│  
+├─views（EJSのテンプレートファイル）  
+│  └─pages  
+│          index.ejs  
+│  
+└─webpack（Webpackの設定ファイル）  
+        base.config.js  
+        dev.config.js  
+        prod.config.js  
+
 # デバッグ
 chromeのデベロッパーツールによるデバッグ方法  
 １．nodemon.jsを編集  
