@@ -7,11 +7,11 @@ Webpack + TypeScript + Express の開発環境です。(テンプレートエン
 〇開発サーバー起動  
 　npm run dev  
 〇開発サーバーのURL  
-　http://localhost:3000  →　本番運用ではnginxで80番ポートにプロキシして公開  
-　Browsersyncを使用しており、上記のURLを以下のURLにプロキシさせています。  
+　http://localhost:3000 （本番運用ではnginxで80番ポートにプロキシして公開）  
+　開発段階では、Browsersyncを使用しているため、下記URLにアクセスしてください。  
 　http://localhost:3001  
-　Browsersyncは監視対象ファイルに変更があった場合、ブラウザを自動でリロードしますので、こちらのURLを使用してください。
- 
+　Browsersyncでは、ポート番号3000を上記URLにプロキシさせています。  
+　Browsersyncは監視対象ファイルに変更があった場合、ブラウザを自動でリロードします。  
 〇デプロイ  
 　npm start  
   dist配下にミニファイされたJSファイルが生成されます。
