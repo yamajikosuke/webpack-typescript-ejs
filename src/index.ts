@@ -22,15 +22,14 @@ if (process.env.NODE_ENV !== 'production') {
     open: false,
     logSnippet: false,
     proxy: `localhost:${defaultPort}`,
-    files: ['./views/**/*']
+    files: ['./views/**/*', './public/css/*']
   });
 }
 app.set('port', defaultPort);
 app.get('/', (req, res, next) => {
   res.render('pages/index', {
-    title: 'Sample1',
-    message: 'Welcome to Website5',
-    content: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>'
+    title: 'Sample',
+    message: 'Welcome to Website'
   }
  );
  console.log(req.query);
