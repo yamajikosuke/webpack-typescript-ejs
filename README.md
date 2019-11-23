@@ -33,14 +33,14 @@ Webpack + TypeScript + Express の開発環境です。(テンプレートエン
 │  
 ├─public（ドキュメントルート：CSSや画像を格納）  
 │　└─images  
-│　　　icon-csvfile.png  
+│　　icon-csvfile.png  
 │  
 ├─src  
 │　　index.ts（エントリポイント）  
 │  
 ├─views（EJSのテンプレートファイル）  
 │　└─pages  
-│　　　index.ejs  
+│　　index.ejs  
 │  
 └─webpack（Webpackの設定ファイル）  
 　　base.config.js  
