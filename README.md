@@ -22,7 +22,6 @@ Webpack + TypeScript + Express の開発環境です。(テンプレートエン
 │　nodemon.json(nodemonの設定ファイル：ファイル変更の監視とサーバーの再起動)  
 │　package.json  
 │　README.md  
-│　readme.txt  
 │　tsconfig.json（typescript設定）  
 │  
 ├─.vscode  
