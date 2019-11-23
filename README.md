@@ -1,4 +1,4 @@
-# webpack-typescript-ejs
+# 概要
 Webpack + TypeScript + Express の開発環境です。(テンプレートエンジンはEJS)  
 ファイル変更時にブラウザを自動リロードします（Browsersync）。
 # 使い方
