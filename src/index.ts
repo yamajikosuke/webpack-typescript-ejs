@@ -26,7 +26,7 @@ if (process.env.NODE_ENV !== 'production') {
   });
   app.use(require('connect-browser-sync')(bs));
 }
-app.set('port', 3000);
+app.set('port', defaultPort);
 app.get('/', (req, res, next) => {
   res.render('pages/index', {
     title: 'Sample1',
@@ -42,8 +42,8 @@ app.get('/', (req, res, next) => {
 
 // app.use("/", router);
 
-app.listen(3000, () => {
-  console.log("listening on port 3000");
+app.listen(defaultPort, () => {
+  console.log("listening on port " + defaultPort);
 });
 
 export default app;
