@@ -1,6 +1,6 @@
 # webpack-typescript-ejs
 Webpack + TypeScript + Express の開発環境です。(テンプレートエンジンはEJS)  
-ファイル変更時にブラウザを自動リロードします。
+ファイル変更時にブラウザを自動リロードします（Browsersync）。
 # 使い方
 開発サーバー起動  
 　npm run dev  
@@ -17,7 +17,7 @@ chromeのデベロッパーツールによるデバッグ方法
 ２．chromeで以下にアクセス  
 　chrome://inspect/#devices  
   
-デバッガ―の使い方の参考 
+デバッガ―の使い方の参考  
   https://dev.to/oieduardorabelo/nodejs-with-typescript-debug-inside-vscode-and-nodemon-23o7  
   
 # 参考サイト
