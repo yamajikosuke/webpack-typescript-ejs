@@ -12,7 +12,7 @@ Webpack + TypeScript + Express の開発環境です。(テンプレートエン
 　http://localhost:3001  
 　Browsersyncでは、ポート番号3000を上記URLにプロキシさせています。  
 　Browsersyncは監視対象ファイルに変更があった場合、ブラウザを自動でリロードします。  
-　/views配下と/pulic配下のファイルが、監視対象になります。(※src配下のTSファイルは監視対象になりません。)  
+　views配下とpulic配下のファイルが、監視対象になります。(※src配下のTSファイルは監視対象になりません。)  
 〇デプロイ  
 　npm start  
   dist配下にミニファイされたJSファイルが生成されます。
