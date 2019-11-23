@@ -11,7 +11,7 @@ Webpack + TypeScript + Express の開発環境です。(テンプレートエン
 chromeのデベロッパーツールによるデバッグ方法  
 １．nodemon.jsを編集  
 　"exec": "ts-node ./src/index.ts",  
-　↓↓↓
+　　　↓↓↓  
 　"exec": "node --inspect -r ts-node/register ./src/index.ts"  
   
 ２．chromeで以下にアクセス  
