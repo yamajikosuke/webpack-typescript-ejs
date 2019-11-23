@@ -17,35 +17,35 @@ Webpack + TypeScript + Express の開発環境です。(テンプレートエン
   dist配下にミニファイされたJSファイルが生成されます。
 # フォルダ構成
 /  
-│  .eslintrc(Lintの設定ファイル)  
-│  .gitignore(Git設定ファイル)  
-│  nodemon.json(nodemonの設定ファイル：ファイル変更の監視とサーバーの再起動)  
-│  package.json  
-│  README.md  
-│  readme.txt  
-│  tsconfig.json（typescript設定）  
+│　.eslintrc(Lintの設定ファイル)  
+│　.gitignore(Git設定ファイル)  
+│　nodemon.json(nodemonの設定ファイル：ファイル変更の監視とサーバーの再起動)  
+│　package.json  
+│　README.md  
+│　readme.txt  
+│　tsconfig.json（typescript設定）  
 │  
 ├─.vscode  
-│      launch.json  
+│　　launch.json  
 │  
 ├─dist  
-│      server.js（npm startでデプロイされるファイル）  
+│　　server.js（npm startでデプロイされるファイル）  
 │  
 ├─public（ドキュメントルート：CSSや画像を格納）  
-│  └─images  
-│          icon-csvfile.png  
+│　└─images  
+│　　　icon-csvfile.png  
 │  
 ├─src  
-│      index.ts（エントリポイント）  
+│　　index.ts（エントリポイント）  
 │  
 ├─views（EJSのテンプレートファイル）  
-│  └─pages  
-│          index.ejs  
+│　└─pages  
+│　　　index.ejs  
 │  
 └─webpack（Webpackの設定ファイル）  
-        base.config.js  
-        dev.config.js  
-        prod.config.js  
+　　base.config.js  
+　　dev.config.js  
+　　prod.config.js  
 
 # デバッグ
 chromeのデベロッパーツールによるデバッグ方法  
