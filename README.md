@@ -1,10 +1,10 @@
 # 概要
-Webpack + TypeScript + Express の開発環境です。(テンプレートエンジンはEJS)  
+Webpack + TypeScript(以下、TSと表記) + Express の開発環境です。(テンプレートエンジンはEJS)  
 監視対象のファイルが変更された場合、ブラウザを自動リロードします（Browsersync）。
 # 使い方
 ## パッケージのインストール  
 　`npm install`  
-  
+
 ## 開発サーバー起動  
 　`npm run dev`  
   
@@ -16,15 +16,23 @@ Webpack + TypeScript + Express の開発環境です。(テンプレートエン
 　views配下とpulic配下のファイルが、監視対象になります。(※src配下のTSファイルは監視対象になりません。F5を押下してください)  
   
 ## 本番サーバー（ビルドとサーバー起動）  
-　`npm start`  
 　本番運用の起動コマンドです（production）。  
-　dist配下にミニファイされたJSファイル（server.js）がビルドされ、そのファイルを読み込んでサーバーが起動します。  
+　`npm start`  
 　ローカル環境では以下のURLにアクセスしてください。  
 　http://localhost:3000 （本番ではnginxで80番ポートにプロキシして公開）  
+　dist配下にミニファイされたJSファイル（server.js）がビルドされ、そのファイルを読み込んでサーバーが起動します。  
   
 ## 開発段階のTSファイルのトランスパイルについて  
 　開発段階ではTSファイルは、JSファイルにトランスパイルされません。  
 　メモリ上にJSファイルが生成されます。
+
+## TSの構文チェックと修正  
+
+　構文チェック：`npm run lint`  
+
+　修正`npm run lint:fix`  
+
+
 # フォルダ構成
 /  
 │　.eslintrc(Lintの設定ファイル)  
@@ -44,7 +52,7 @@ Webpack + TypeScript + Express の開発環境です。(テンプレートエン
 │　└─images  
 │　　icon-csvfile.png  
 │  
-├─src  
+├─src  TSファイルはこのフォルダに格納してください。  
 │　　index.ts（エントリポイント）  
 │  
 ├─views（EJSのテンプレートファイル）  
@@ -53,8 +61,8 @@ Webpack + TypeScript + Express の開発環境です。(テンプレートエン
 │  
 └─webpack（Webpackの設定ファイル）  
 　　base.config.js  
-　　dev.config.js  
-　　prod.config.js  
+　　dev.config.js  (現在未使用)
+　　prod.config.js  （本番用のビルド設定 base.config.jsをインクルード）
 
 # デバッグ
 chromeのデベロッパーツールによるデバッグ方法  
