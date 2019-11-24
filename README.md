@@ -1,5 +1,5 @@
 # 概要
-Webpack + TypeScript + Express の開発環境です。(テンプレートエンジンはEJS)  
+Webpack + TypeScript(以下、TSと表記) + Express の開発環境です。(テンプレートエンジンはEJS)  
 監視対象のファイルが変更された場合、ブラウザを自動リロードします（Browsersync）。
 # 使い方
 ## パッケージのインストール  
