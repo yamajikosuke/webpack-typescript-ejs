@@ -6,12 +6,15 @@
   "scripts": {
     "dev": "nodemon -L",
     "build": "webpack --config ./webpack/prod.config.js",
-    "start": "npm run build && node dist/server.js"
+    "start": "npm run build && node dist/server.js",
+    "lint": "eslint ./src/index.ts",
+    "lint:fix": "eslint ./src/index.ts --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/browser-sync": "^2.26.1",
     "@types/cookie-parser": "^1.4.2",
     "@types/express": "^4.17.2",
     "@typescript-eslint/eslint-plugin": "^2.7.0",
