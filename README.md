@@ -52,7 +52,7 @@ Webpack + TypeScript + Express の開発環境です。(テンプレートエン
 │　└─images  
 │　　icon-csvfile.png  
 │  
-├─src  
+├─src  TSファイルはこのフォルダに格納してください。  
 │　　index.ts（エントリポイント）  
 │  
 ├─views（EJSのテンプレートファイル）  
