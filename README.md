@@ -4,7 +4,7 @@ Webpack + TypeScript + Express の開発環境です。(テンプレートエン
 # 使い方
 ## パッケージのインストール  
 　`npm install`  
-  
+
 ## 開発サーバー起動  
 　`npm run dev`  
   
@@ -25,6 +25,14 @@ Webpack + TypeScript + Express の開発環境です。(テンプレートエン
 ## 開発段階のTSファイルのトランスパイルについて  
 　開発段階ではTSファイルは、JSファイルにトランスパイルされません。  
 　メモリ上にJSファイルが生成されます。
+
+## TSの構文チェックと修正  
+
+　構文チェック：`npm run lint`  
+
+　修正`npm run lint:fix`  
+
+
 # フォルダ構成
 /  
 │　.eslintrc(Lintの設定ファイル)  
@@ -53,8 +61,8 @@ Webpack + TypeScript + Express の開発環境です。(テンプレートエン
 │  
 └─webpack（Webpackの設定ファイル）  
 　　base.config.js  
-　　dev.config.js  
-　　prod.config.js  
+　　dev.config.js  (現在未使用)
+　　prod.config.js  （本番用のビルド設定 base.config.jsをインクルード）
 
 # デバッグ
 chromeのデベロッパーツールによるデバッグ方法  
