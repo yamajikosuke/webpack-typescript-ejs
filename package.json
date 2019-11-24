@@ -7,8 +7,8 @@
     "dev": "nodemon -L",
     "build": "webpack --config ./webpack/prod.config.js",
     "start": "npm run build && node dist/server.js",
-    "lint": "eslint ./src/index.ts",
-    "lint:fix": "eslint ./src/index.ts --fix"
+    "lint": "eslint ./src/**/*",
+    "lint:fix": "eslint ./src/**/* --fix"
   },
   "keywords": [],
   "author": "",
