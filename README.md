@@ -61,8 +61,8 @@ Webpack + TypeScript(以下、TSと表記) + Express の開発環境です。(�
 │  
 └─webpack（Webpackの設定ファイル）  
 　　base.config.js  
-　　dev.config.js  (現在未使用)
-　　prod.config.js  （本番用のビルド設定 base.config.jsをインクルード）
+　　dev.config.js  (現在未使用)  
+　　prod.config.js  （本番用のビルド設定 base.config.jsをインクルード）  
 
 # デバッグ
 chromeのデベロッパーツールによるデバッグ方法  
